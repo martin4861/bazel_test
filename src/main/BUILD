@@ -4,6 +4,6 @@ cc_binary(
     name = "main",
     srcs = ["src/main.cpp"],
     deps = [
-        "//src/util:util"
+        "//src/util:util_lib"
     ]
 )
