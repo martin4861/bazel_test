@@ -5,5 +5,5 @@ cc_library(
     hdrs = ["inc/util/util.hpp"],  
     srcs = ["src/util.cpp"],
     includes = ["inc/"],
-    visibility = ["//src/main:__pkg__"]
+    visibility = ["//visibility:public"]
 )
