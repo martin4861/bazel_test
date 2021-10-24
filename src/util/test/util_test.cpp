@@ -8,5 +8,5 @@ TEST(Foo, Bar)
 
 TEST(Foo, Pow2)
 {
-    EXPECT_THAT(pow2(3.0), ::testing::Eq(3.0*3.0));
+    EXPECT_THAT(pow2(30.0), ::testing::Eq(3.0*3.0));
 }
