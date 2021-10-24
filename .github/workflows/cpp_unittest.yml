@@ -1,0 +1,16 @@
+name: C++ Unittest
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: run all tests
+      run: bazel test --test_output=all $(bazel query //...)
