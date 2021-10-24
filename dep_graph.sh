@@ -1,0 +1,1 @@
+xdot <(bazel query --notool_deps --noimplicit_deps "deps(//src/main/src:main)" --output graph)
